@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRs Normas Regulamentadoras - Documentos Oficiais</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #172554;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --btn-bg: #1e3a8a;
+            --btn-hover: #1d4ed8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            padding: 40px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background: var(--bg-card);
+            padding: 40px 32px;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            color: var(--primary-dark);
+            font-size: 1.85rem;
+            margin-bottom: 12px;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 32px;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .doc-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 24px;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: all 0.2s ease-in-out;
+            text-align: left;
+        }
+
+        .doc-card:hover {
+            border-color: #3b82f6;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .doc-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .doc-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .arrow {
+            font-size: 1.3rem;
+            color: #3b82f6;
+            margin-left: 16px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <span class="app-badge">T7Droid</span>
+    <h1>NRs - Normas Regulamentadoras</h1>
+    <p class="subtitle">Documentos legais, transparência e termos de uso do aplicativo.</p>
+
+    <div class="card-grid">
+        <a href="termos-de-servico.html" class="doc-card">
+            <div>
+                <div class="doc-title">📜 Termos de Serviço</div>
+                <div class="doc-desc">Condições de uso, planos de assinatura e regras do aplicativo.</div>
+            </div>
+            <span class="arrow">&rarr;</span>
+        </a>
+
+        <a href="politica-de-privacidade.html" class="doc-card">
+            <div>
+                <div class="doc-title">🔒 Política de Privacidade</div>
+                <div class="doc-desc">Tratamento de dados, LGPD, permissões e SDKs de terceiros.</div>
+            </div>
+            <span class="arrow">&rarr;</span>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 T7Droid - Thyago Silvestre. Todos os direitos reservados.</p>
+    </footer>
+</div>
+
+</body>
+</html>
